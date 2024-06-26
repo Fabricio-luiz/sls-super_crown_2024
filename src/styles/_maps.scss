@@ -1,0 +1,16 @@
+@use "variables";
+
+.maps{
+    background-image: linear-gradient(variables.$color2, variables.$color1);
+
+    .container{
+        padding-top: 64px;
+        padding-bottom: 64px;
+        text-align: center;
+
+        img{
+            width: 100%;
+            max-width: 800px;
+        }
+    }
+}

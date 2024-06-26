@@ -1,0 +1,54 @@
+@use "variables";
+
+.movie{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+    background-image: linear-gradient(variables.$color3, variables.$color2);
+
+    &__play{
+        display: flex;
+        gap: 40px;
+
+        h2{
+            color: variables.$color1;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            margin-top: 16px;
+        }
+
+        iframe{
+            border-radius: 8px;
+            //border: 2px solid rgb(255, 0, 0);
+        }
+    }
+
+    @media (max-width: 640px){
+        
+        &__play{
+        display: block;  
+        
+            iframe{
+                width: 100%;
+                max-width: 360px;
+                max-height: 200px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px){
+
+        &__play{
+            display: block;
+
+            iframe{
+                width: 100%;
+                max-width: 800px;
+                height: 440px;
+            }
+        }
+    }
+    
+
+}

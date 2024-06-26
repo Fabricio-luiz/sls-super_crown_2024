@@ -1,0 +1,42 @@
+@use "variables";
+
+.hero{
+    padding-top: 100px;
+    padding-bottom: 64px;
+    background-image: url(../images/sp_1_FINAL_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    &__text{
+        margin-top: 420px;
+        margin-bottom: 24px;
+        font-size: 32px;
+        font-weight: 800;
+        //line-height: 56px;
+        color: variables.$color3;
+        text-align: center;
+    }
+
+    &__button{
+        background-color: variables.$color3;
+        padding: 18px;
+        font-size: 24px;
+        font-weight: 800;
+        font-style: italic;
+        color: variables.$color1;
+        text-decoration: none;
+        border-radius: 30px;
+    }
+    
+    @media(max-width: 640px){
+        //padding: 40px 0;
+
+        &__text{
+        font-size: 18px;
+        line-height: 24px;
+        }
+
+    }
+
+}
