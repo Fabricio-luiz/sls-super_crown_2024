@@ -1,42 +1,62 @@
 @use "variables";
 
 .hero{
-    padding-top: 100px;
+    //padding-top: 64px;
     padding-bottom: 64px;
-    background-image: url(../images/sp_1_FINAL_3.png);
+    background-image: url(../images/sp_4_pb.png);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
 
+    .container{
+        max-width: 1920px;
+    }
+
     &__text{
-        margin-top: 420px;
-        margin-bottom: 24px;
-        font-size: 32px;
+        margin-top: 32px;
+        margin-bottom: 64px;
+        font-size: 36px;
         font-weight: 800;
-        //line-height: 56px;
         color: variables.$color3;
-        text-align: center;
+        line-height: 48px;
+
     }
 
-    &__button{
-        background-color: variables.$color3;
-        padding: 18px;
-        font-size: 24px;
-        font-weight: 800;
-        font-style: italic;
-        color: variables.$color1;
-        text-decoration: none;
-        border-radius: 30px;
+    &__logo{
+        display: block;
+        margin: 0;
+        width: 100%;
+        //max-width: 1920px;
     }
-    
+
     @media(max-width: 640px){
-        //padding: 40px 0;
 
-        &__text{
-        font-size: 18px;
-        line-height: 24px;
+        &__logo{
+            //width: 100%;
+            //max-width: 320px;
+            //height: 200px;
         }
 
+        &__text{
+            font-size: 18px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+
+    @media(max-width: 768px){
+
+        &__logo{
+            //width: 100%;
+            //max-width: 320px;
+            //height: 200px;
+        }
+
+        &__text{
+            font-size: 24px;
+            line-height: 24px;
+            margin: 32px 0;
+        }
     }
 
 }
