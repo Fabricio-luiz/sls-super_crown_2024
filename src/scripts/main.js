@@ -26,4 +26,9 @@ console.log(segundosAteOEvento);
 
 document.getElementById("contador").innerHTML =`${diasAteOEvento}d ${horasAteOEvento}h ${minutosAteOEvento}m ${segundosAteOEvento}s`;
 
+if(distanciaAteOEvento < 0){
+    clearInterval(contaAsHoras);
+    document.getElementById("contador").innerHTML = "Finalizado"
+}
+
 }, 1000);

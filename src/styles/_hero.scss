@@ -21,7 +21,7 @@
         line-height: 48px;
 
         spam{
-            color: variables.$textColorPrimary;
+            color: lighten(variables.$color4, 3%);
         }
 
     }
