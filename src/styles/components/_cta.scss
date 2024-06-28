@@ -1,0 +1,37 @@
+@use "../variables";
+
+.cta{
+    
+    .button{
+        background-color: variables.$color3;
+        padding: 18px;
+        font-size: 20px;
+        font-weight: 900;
+        font-style: italic;
+        color: variables.$color1;
+        text-decoration: none;
+        border-radius: 30px;
+
+        &:hover{
+            background-color: lighten(variables.$color3, 3%);
+        }
+    }
+
+    @media (max-width: 640px){
+        .button{
+            background-color: variables.$color3;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: 900;
+            font-style: italic;
+            color: variables.$color1;
+            text-decoration: none;
+            border-radius: 30px;
+    
+            &:hover{
+                background-color: lighten(variables.$color3, 3%);
+            }
+        }
+
+    }
+}
